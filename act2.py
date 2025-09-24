@@ -1,20 +1,29 @@
-class Person :
+class bird :
 
-    def __init__(self,name,idnumber):
-        self.name = name
-        self.idnumber = idnumber
-    def display(self):
-        print(self.name)
-        print(self.idnumber)
+    def __init__(self):
+        print("Bird is ready")
+
+    def whoisThis(self):
+        print("Bird")
+        
+    def swim(self):
+        print("swim faster")
 
     
-class empolyee(Person):
-    def __init__(self,name,idnumber,salary,post):
-        self.salary = salary
-        self.post = post
+class parrot(bird):
+    def __init__(self):
+        super.__init__()
+        print("Parrot is ready")
 
-        Person.__init__(self,name,idnumber)
-a = empolyee('nita',23456,200000,"Intern")
-a.display()
+    def whoisthis(self):
+        print("parrot")
+
+    def run(self):
+        print("Run faster")
+
+paro = parrot()
+paro.whoisthis()
+paro.swim()
+paro.run()
         
         
